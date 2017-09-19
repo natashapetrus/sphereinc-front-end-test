@@ -1,0 +1,442 @@
+﻿@media (max-width: 479px) {
+    #portrait {
+        text-align: center;
+        font-weight: 700;
+        height: 100%;
+    }
+
+    #landscape {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) {
+    #portrait {
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .y-axis {
+        left: 40px;
+    }
+
+    .two, .three, .four {
+        width: 75%;
+    }
+}
+
+@media (min-width: 571px) and (max-width: 960px) {
+    .y-axis {
+        left: 7%;
+    }
+
+    .two, .three, .four {
+        width: 47%;
+    }
+    /* .four 30%? */
+}
+
+@media (max-width: 960px) {
+    #menu {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    input[type=checkbox]:checked ~ #menu {
+        visibility: visible;
+        position: fixed;
+        background-color: #fff;
+        margin: 26px 0 0 0;
+        padding: 25px 25px 25px 0;
+        line-height: 1.5em;
+    }
+
+    #left, #right, .padding {
+        width: 7vw;
+        min-width: 40px;
+    }
+
+    .first, .second, .third, .last {
+        margin: 0 1%;
+    }
+}
+
+@media (min-width: 961px) {
+    #menu li {
+        display: inline-block;
+    }
+
+    .show-menu, .show-menu2 {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    #left, #right, .padding {
+        width: 5%;
+    }
+
+    .y-axis {
+        left: 5%;
+    }
+
+    .first, .second, .third {
+        margin-left: 1%;
+    }
+
+    .last {
+        margin: 0 1%;
+    }
+
+    .two {
+        width: 48%;
+    }
+
+    .three {
+        width: 31%;
+    }
+
+    .four {
+        width: 23%;
+    }
+}
+
+html, body {
+    margin: 0;
+    font: 100% Helvetica, 'Open Sans', Arial, sans-serif;
+    color: #555;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    z-index: 3;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+input[type=checkbox] {
+    display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=submit] {
+    border: 0;
+}
+
+input[type=text] {
+    font: 1em Helvetica, 'Open Sans', Helvetica, sans-serif;
+    margin-bottom: 25px;
+    padding: 15px 3%;
+    width: 93%;
+}
+
+button {
+    border: 0;
+    background-color: #448;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    padding: 7px 5% 10px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 175px;
+}
+
+h1 {
+    font-size: 0;
+}
+
+h2 {
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #448;
+}
+
+    a:hover {
+        border-bottom: 1px solid;
+    }
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+span {
+    display: inline-block;
+}
+
+#logo {
+    float: right;
+    margin-top: 7px; /* needs changing: should be vertical aligned instead */
+    margin-right: 3%; /* why needed with #top padding? */
+    background: url(/images/logo.png) center no-repeat; /* CHANGED URL */
+    background-size: 170px 50px;
+    height: 50px;
+    width: 170px;
+}
+
+#top {
+    float: left;
+    margin-top: 18px; /* needs changing: should be vertical aligned instead */
+    padding: 0 3%;
+    height: 44px;
+}
+
+#menu li {
+    margin-top: 3px;
+    margin-right: 25px;
+    position: relative;
+}
+
+    #menu li a {
+        color: #333;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+        #menu li a:hover {
+            color: #448;
+            border-bottom: #448 1px solid;
+        }
+
+.show-menu {
+    font-size: 0;
+    text-decoration: none;
+    cursor: pointer;
+    background: url(/images/arrow.png) no-repeat 15px 23px #448; /* CHANGED URL */
+    padding: 30px;
+}
+/* needs changing: shouldn't be space on the left */
+
+.circle {
+    background-color: green;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+}
+
+.vertical-align {
+    vertical-align: middle;
+    height: 100%;
+}
+
+#invite {
+    margin-top: 64px;
+    background-color: #f70;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #fff;
+    height: 64px;
+}
+
+.nav-height {
+    height: 64px;
+}
+
+.nav-invite-height {
+    height: 128px;
+}
+
+.nav-position {
+    top: 64px;
+}
+
+.nav-invite-position {
+    top: 128px;
+}
+
+#left, #right {
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+    text-align: center;
+    height: 100%;
+}
+
+#right {
+    right: 0;
+}
+
+.table {
+    position: absolute; /* is there another way? float left from position sticky div? */
+    display: table;
+    width: 100%;
+}
+
+.padding {
+    display: table-cell;
+}
+
+#welcome {
+    margin: 0 auto;
+    padding-top: 1%;
+    width: 75%;
+    max-width: 500px;
+}
+
+#calendar {
+    display: table-cell;
+}
+
+#main {
+    display: table-cell;
+    padding-top: 5%;
+    text-align: center;
+}
+
+#whole-screen {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    display: none;
+}
+
+#popupmenu {
+    background-color: #fff;
+    border: 1px solid #448;
+    border-radius: 10px;
+    position:fixed;
+    z-index:100;
+    top:30%;
+    left:40%;
+    height:180px;
+    padding: 10px;
+}
+
+#error-message {
+    color: #f70;
+    font-size: smaller;
+    display: none;
+    width: 100%;
+}
+
+.columns {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 25px; /* needs changing */
+    text-align: left;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+}
+
+.x-axis {
+    background-color: #fff;
+}
+
+.y-axis {
+    z-index: 1;
+    padding: 0 1em 22px 0; /* padding-right could be lower in lower res */
+    background-color: #fff;
+    vertical-align: top; /* for table-cell */
+    line-height: 44px;
+    text-align: right;
+    font-size: 0.8em;
+    width: 3em;
+}
+
+.weekend {
+    background-color: #eef;
+}
+
+.day {
+    float: left;
+    text-align: center;
+    width: 14.25%;
+    min-width: 100px;
+}
+
+.checkbox {
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+    .checkbox label {
+        display: block;
+        cursor: pointer;
+    }
+
+.time label {
+    height: 22px;
+}
+
+.interest {
+    background-color: lightblue;
+    font-size: 1.25em;
+    color: #fff;
+}
+
+    .interest label {
+        padding: 1em;
+        height: 1em;
+    }
+
+.no-touch .checkbox:hover, .checkbox input[type=checkbox]:checked + label {
+    background: blue;
+}
+
+.box {
+    position: relative;
+    background-color: lightblue;
+    padding: 20px;
+    line-height: 1.3em;
+    text-align: left;
+    color: #fff;
+}
+
+    .box a, .box-text {
+        vertical-align: top;
+        font-size: 0.9em;
+    }
+
+.box-title {
+    font-size: 1.5em;
+}
+
+.lfloat {
+    float: left;
+}
+
+.rfloat{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.confirm-button {
+    display:inline-block;
+    width: 49%;
+}
