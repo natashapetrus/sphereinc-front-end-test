@@ -186,7 +186,7 @@ span {
     float: right;
     margin-top: 7px; /* needs changing: should be vertical aligned instead */
     margin-right: 3%; /* why needed with #top padding? */
-    background: url(/images/logo.png) center no-repeat; /* CHANGED URL */
+    background: url(images/logo.png) center no-repeat; /* CHANGED URL */
     background-size: 170px 50px;
     height: 50px;
     width: 170px;
@@ -221,7 +221,7 @@ span {
     font-size: 0;
     text-decoration: none;
     cursor: pointer;
-    background: url(/images/arrow.png) no-repeat 15px 23px #448; /* CHANGED URL */
+    background: url(images/arrow.png) no-repeat 15px 23px #448; /* CHANGED URL */
     padding: 30px;
 }
 /* needs changing: shouldn't be space on the left */
